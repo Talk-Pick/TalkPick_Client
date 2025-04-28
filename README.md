@@ -46,7 +46,7 @@ pnpm dev
 
 # ⚒️ 기술 스택
 
-<img src="https://github.com/Talk-Pick/TalkPick_Client/blob/main/.github/asset/skills.png" height="500" alt="기술스택 이미지"/>
+<img src="https://github.com/Talk-Pick/TalkPick_Client/blob/main/.github/asset/skills.png" height="400" alt="기술스택 이미지"/>
 
 # 💪🏻 기술적 경험
 
