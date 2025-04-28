@@ -1,6 +1,7 @@
 <div align="center">
 
 <h1>TalkPick</h1>
+<img src="https://avatars.githubusercontent.com/u/197394213?s=400&u=1b630efe20673d36d304401afcb75d80c2bc3aaa&v=4" alt="Reflective 로고">
 
 여기에는 톡픽에 대한 설명해주세요...
 
@@ -20,7 +21,6 @@
 
 - [FE](#FE)
   - [성능 최적화](#성능-최적화)
-  - [FSD 아키텍처](#fsd-아키텍처)
 
 <br />
 
