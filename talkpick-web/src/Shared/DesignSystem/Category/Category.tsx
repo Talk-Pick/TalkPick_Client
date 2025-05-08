@@ -1,27 +1,37 @@
-const Text = {
-  blind_date: "소개팅/과팅",
-  group_meeting: "그룹 첫 모임",
-  friend_meeting: "친구",
-  family: "가족",
-  roommate_first_meeting: "룸메 첫 만남",
-  coworker: "동료",
-  icebreaking: "기타/아이스브레이킹",
-  couple: "연인",
-};
+import { css } from "@emotion/react";
+import Styled from "@emotion/styled";
+import { Guide } from "..";
+import { Text } from "./Model/CategoryMap";
+import { badgeStyle } from "./UI/badgeStyle";
+import { CategoryType } from "./Model/Category.type";
 
-type CategoryType =
-  | "blind_date"
-  | "group_meeting"
-  | "friend_meeting"
-  | "family"
-  | "roommate_first_meeting"
-  | "coworker"
-  | "icebreaking"
-  | "couple";
 interface CategoryProps {
   category: CategoryType;
 }
 
+// styled 컴포넌트 접근법
+const StyleCircle = Styled.circle<{
+  category: CategoryType;
+}>`
+    ${({ category }) => {
+      const style = badgeStyle[category];
+      return css`
+        font-family: ${Guide.typography.fontFamily};
+        font-weight: ${Guide.typography.weight.semiBold};
+        font-size: 12px;
+        line-height: 14px;
+        color: ${style.color};
+        background: ${style.background};
+        width: ${style.width};
+        height: 31px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      `;
+    }}
+  `;
+
 export const Category = ({ category }: CategoryProps) => {
-  return <circle>{Text[category]}</circle>;
+  return <StyleCircle category={category}>{Text[category]}</StyleCircle>;
 };

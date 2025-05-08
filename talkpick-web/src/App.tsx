@@ -1,5 +1,7 @@
 import "./App.css";
 import { Button } from "./Shared/DesignSystem/Button/Button";
+import { Category } from "./Shared/DesignSystem/Category/Category";
+import { categories } from "./Shared/DesignSystem/Category/Model/CategoryMap";
 import "./Shared/DesignSystem/font/font.css";
 import { Heading } from "./Shared/DesignSystem/Heading/Heading";
 import { NavigationBar } from "./Shared/DesignSystem/NavigationBar/NavigationBar";
@@ -37,6 +39,12 @@ function App() {
         </div>
       </section>
       <NavigationBar />
+
+      <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        {categories.map((category) => (
+          <Category key={category} category={category} />
+        ))}
+      </div>
     </main>
   );
 }
