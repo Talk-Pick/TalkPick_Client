@@ -9,6 +9,7 @@ import { Heading } from "./Shared/DesignSystem/Heading/Heading";
 import { NavigationBar } from "./Shared/DesignSystem/NavigationBar/NavigationBar";
 import { Text } from "./Shared/DesignSystem/Text/Text";
 import { CategoryType } from "./Shared/DesignSystem/Category/Model/Category.type";
+import { PickTalkPickCard } from "./Shared/DesignSystem/PickTalkPickCard/PickTalkPickCard";
 function App() {
   const [activeCategory, setActiveCategory] = useState("");
   const handleClickCategory = (category: CategoryType) => {
@@ -24,7 +25,7 @@ function App() {
         justifyContent: "center",
         gap: "34px",
         width: "100%",
-        height: "100%",
+        height: "200%",
       }}
     >
       <section
@@ -46,7 +47,6 @@ function App() {
           <Button variant="rest">시작하기</Button>
         </div>
       </section>
-      <NavigationBar />
 
       <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
         {categories.map((category) => (
@@ -64,6 +64,12 @@ function App() {
           />
         ))}
       </div>
+      <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        {categories.map((category) => (
+          <PickTalkPickCard key={category} category={category} />
+        ))}
+      </div>
+      <NavigationBar />
     </main>
   );
 }

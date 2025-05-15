@@ -44,10 +44,6 @@ const StyleButton = Styled.button<{
               ? style.blur
               : "rgba(182, 182, 182, 0.5)"};
           transition: transform 0.2s ease, box-shadow 0.2s ease;
-          &:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          }
         `;
       }}
     `;

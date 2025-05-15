@@ -1321,6 +1321,27 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - react-native-webview (13.13.5):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.10.14.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - React-nativeconfig (0.76.9)
   - React-NativeModulesApple (0.76.9):
     - glog
@@ -1600,7 +1621,7 @@ DEPENDENCIES:
   - "boost (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/third-party-podspecs/boost.podspec`)"
   - "DoubleConversion (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)"
   - EXConstants (from `../node_modules/expo-constants/ios`)
-  - "Expo (from `../node_modules/.pnpm/expo@52.0.46_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__react-na_910c8c043a532a96472e235e3564a3e2/node_modules/expo`)"
+  - "Expo (from `../node_modules/.pnpm/expo@52.0.46_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__react-na_f8dc73fa86de2964f747096eb5471c33/node_modules/expo`)"
   - ExpoAsset (from `../node_modules/expo-asset/ios`)
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
   - ExpoFont (from `../node_modules/expo-font/ios`)
@@ -1642,6 +1663,7 @@ DEPENDENCIES:
   - "React-logger (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon/logger`)"
   - "React-Mapbuffer (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon`)"
   - "React-microtasksnativemodule (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)"
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - "React-nativeconfig (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon`)"
   - "React-NativeModulesApple (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)"
   - "React-perflogger (from `../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon/reactperflogger`)"
@@ -1683,7 +1705,7 @@ EXTERNAL SOURCES:
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
   Expo:
-    :path: "../node_modules/.pnpm/expo@52.0.46_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__react-na_910c8c043a532a96472e235e3564a3e2/node_modules/expo"
+    :path: "../node_modules/.pnpm/expo@52.0.46_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__react-na_f8dc73fa86de2964f747096eb5471c33/node_modules/expo"
   ExpoAsset:
     :path: "../node_modules/expo-asset/ios"
   ExpoFileSystem:
@@ -1763,6 +1785,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon"
   React-microtasksnativemodule:
     :path: "../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
   React-nativeconfig:
     :path: "../node_modules/.pnpm/react-native@0.76.9_@babel+core@7.26.10_@babel+preset-env@7.26.9_@babel+core@7.26.10__@types+react@18.3.20_react@18.3.1/node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1864,6 +1888,7 @@ SPEC CHECKSUMS:
   React-logger: c4052eb941cca9a097ef01b59543a656dc088559
   React-Mapbuffer: 33546a3ebefbccb8770c33a1f8a5554fa96a54de
   React-microtasksnativemodule: d80ff86c8902872d397d9622f1a97aadcc12cead
+  react-native-webview: bd489cf45e34be236df3394d3fe33a94319820d6
   React-nativeconfig: 8efdb1ef1e9158c77098a93085438f7e7b463678
   React-NativeModulesApple: cebca2e5320a3d66e123cade23bd90a167ffce5e
   React-perflogger: 72e653eb3aba9122f9e57cf012d22d2486f33358
