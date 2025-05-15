@@ -10,6 +10,7 @@ import { NavigationBar } from "./Shared/DesignSystem/NavigationBar/NavigationBar
 import { Text } from "./Shared/DesignSystem/Text/Text";
 import { CategoryType } from "./Shared/DesignSystem/Category/Model/Category.type";
 import { PickTalkPickCard } from "./Shared/DesignSystem/PickTalkPickCard/PickTalkPickCard";
+import { TodayTalkPickCard } from "./Shared/DesignSystem/TodayTalkPickCard/TodayTalkPickCard";
 function App() {
   const [activeCategory, setActiveCategory] = useState("");
   const handleClickCategory = (category: CategoryType) => {
@@ -67,6 +68,11 @@ function App() {
       <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
         {categories.map((category) => (
           <PickTalkPickCard key={category} category={category} />
+        ))}
+      </div>
+      <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
+        {categories.map((category) => (
+          <TodayTalkPickCard key={category} category={category} />
         ))}
       </div>
       <NavigationBar />
