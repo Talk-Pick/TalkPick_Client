@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import { Button } from "./Shared/DesignSystem/Button/Button";
 import { Category } from "./Shared/DesignSystem/Category/Category";
@@ -7,7 +8,13 @@ import "./Shared/DesignSystem/font/font.css";
 import { Heading } from "./Shared/DesignSystem/Heading/Heading";
 import { NavigationBar } from "./Shared/DesignSystem/NavigationBar/NavigationBar";
 import { Text } from "./Shared/DesignSystem/Text/Text";
+import { CategoryType } from "./Shared/DesignSystem/Category/Model/Category.type";
 function App() {
+  const [activeCategory, setActiveCategory] = useState("");
+  const handleClickCategory = (category: CategoryType) => {
+    setActiveCategory(category);
+  };
+
   return (
     <main
       style={{
@@ -49,7 +56,12 @@ function App() {
 
       <div style={{ display: "flex", justifyContent: "center", gap: "10px" }}>
         {categories.map((category) => (
-          <CategoryCard key={category} category={category} />
+          <CategoryCard
+            key={category}
+            category={category}
+            activeCategory={activeCategory}
+            onClick={handleClickCategory}
+          />
         ))}
       </div>
     </main>
