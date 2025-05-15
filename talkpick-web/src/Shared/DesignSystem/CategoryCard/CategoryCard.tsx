@@ -5,14 +5,17 @@ import { CategoryCardIcons } from "./CategoryCardIcons/CategoryCardIcons";
 import { css } from "@emotion/react";
 
 const categoryBackground = {
-  blind_date: "#FFEEF1",
-  group_meeting: "#FFFBE8",
-  friend_meeting: "#FFEFE2",
-  family: "#E9E6FF",
-  roommate_first_meeting: "#E9FFD8",
-  coworker: "#F1F6FF",
-  icebreaking: "#ECFBFF",
-  couple: "#FFEFFA",
+  blind_date: { background: "#FFEEF1", blur: "rgba(255, 134, 152, 0.5)" },
+  group_meeting: { background: "#FFFBE8", blur: "rgba(221, 187, 39, 0.5)" },
+  friend_meeting: { background: "#FFEFE2", blur: "rgba(255, 150, 64, 0.5)" },
+  family: { background: "#E9E6FF", blur: "rgba(142, 123, 255, 0.5)" },
+  roommate_first_meeting: {
+    background: "#E9FFD8",
+    blur: "rgba(123, 186, 69, 0.5)",
+  },
+  coworker: { background: "#F1F6FF", blur: "rgba(102, 161, 238, 0.5)" },
+  icebreaking: { background: "#ECFBFF", blur: "rgba(102, 197, 212, 0.5)" },
+  couple: { background: "#FFEFFA", blur: "rgba(247, 103, 199, 0.5)" },
 };
 
 // styled 컴포넌트 접근법
@@ -31,10 +34,15 @@ const StyleButton = Styled.button<{
           height: 129px;
           gap: 10px;
           border-radius: 20px;
-          background: ${activeCategory === category ? style : "#f9f9f9"};
+          background: ${activeCategory === category
+            ? style.background
+            : "#f9f9f9"};
           border: none;
           cursor: pointer;
-          box-shadow: 0px 6px 7.2px rgba(182, 182, 182, 0.5);
+          box-shadow: 0px 6px 7.2px
+            ${activeCategory === category
+              ? style.blur
+              : "rgba(182, 182, 182, 0.5)"};
           transition: transform 0.2s ease, box-shadow 0.2s ease;
           &:hover {
             transform: translateY(-2px);
