@@ -1,4 +1,4 @@
-// 메시지 배열
+// 첫번째 랜딩 페이지 엔티티
 export const firstMascotMessages: string[] = [
   "낯선 자리가 어색해서...",
   "무슨 말을 해야 할지 몰라서...",
@@ -9,3 +9,5 @@ export const firstMascotMessages: string[] = [
 
 export const text = `어색한 첫 만남,
 다들 경험 있죠?`;
+
+export const MESSAGE_DEALY = 800;

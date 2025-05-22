@@ -4,6 +4,7 @@ import { Heading } from "../../../../shared/DesignSystem/Heading/Heading";
 import { Guide } from "../../../../shared/DesignSystem";
 import {
   firstMascotMessages,
+  MESSAGE_DEALY,
   text,
 } from "../../../../entities/LandingPage/Model/constant";
 
@@ -22,7 +23,7 @@ export default function FirstMascot() {
           return prev;
         }
       });
-    }, 800);
+    }, MESSAGE_DEALY);
 
     return () => clearInterval(timer);
   }, []);
