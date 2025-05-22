@@ -4,8 +4,8 @@ import { Heading } from "../../../../shared/DesignSystem/Heading/Heading";
 import { Guide } from "../../../../shared/DesignSystem";
 import {
   firstMascotMessages,
+  firstText,
   MESSAGE_DEALY,
-  text,
 } from "../../../../entities/LandingPage/Model/constant";
 
 export default function FirstMascot() {
@@ -30,7 +30,7 @@ export default function FirstMascot() {
 
   return (
     <StyledMain>
-      <Heading variant="heading1">{text}</Heading>
+      <Heading variant="heading1">{firstText}</Heading>
       <MessageContainer>
         {visibleMessages.map((message, index) => (
           <React.Fragment key={index}>

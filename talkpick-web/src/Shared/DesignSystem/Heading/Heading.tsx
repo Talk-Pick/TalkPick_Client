@@ -25,6 +25,7 @@ const StyledHeading = styled.h1<{
       font-size: ${style.fontSize};
       line-height: ${style.lineHeight};
       color: ${color || style.color};
+      text-align: center;
       margin: 0; // 추가적인 스타일 리셋
     `;
   }}

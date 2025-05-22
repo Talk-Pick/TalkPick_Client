@@ -7,7 +7,11 @@ export const firstMascotMessages: string[] = [
   "침묵한 순간이 그 순간...",
 ];
 
-export const text = `어색한 첫 만남,
+export const firstText = `어색한 첫 만남,
 다들 경험 있죠?`;
 
 export const MESSAGE_DEALY = 800;
+
+// 두번째 랜딩 페이지 엔티티
+export const secondText = `스몰토크, 이제
+우리가 도와드릴게요!`;
