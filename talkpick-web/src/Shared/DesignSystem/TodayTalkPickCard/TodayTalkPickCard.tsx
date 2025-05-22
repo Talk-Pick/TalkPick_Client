@@ -1,10 +1,11 @@
 import Styled from "@emotion/styled";
-import { CategoryType } from "../Category/Model/Category.type";
+
 import { Category } from "../Category/Category";
 import { Guide } from "..";
 import { Text } from "../Text/Text";
 import { Heading } from "../Heading/Heading";
 import { TodayTalkPickCardIcons } from "./TodayTalkPickCardIcons/TodayTalkPickCardIcons";
+import { CategoryType } from "../Category/Model/Category.type";
 
 const StyledCard = Styled.article`
 display: flex;
