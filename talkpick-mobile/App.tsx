@@ -5,7 +5,6 @@ import { WebView } from "react-native-webview";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.headerText}>WebView Demo</Text>
       <WebView
         style={styles.webview}
         source={{ uri: "http://localhost:5173" }}
